@@ -9,7 +9,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>React Avançado - Boilerplate</title>
+        <title>Javascript - Currency</title>
 
         <link rel="shortcut icon" href="/img/icon-512.png" />
         <link rel="apple-touch-icon" href="/img/icon-512.png" />
@@ -18,6 +18,12 @@ function App({ Component, pageProps }: AppProps) {
         <meta
           name="description"
           content="A simple project starter to work with Typescript, React, NextJS and Styled Components"
+        />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;500;700&display=swap"
+          rel="stylesheet"
         />
       </Head>
 
