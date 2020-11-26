@@ -1,9 +1,17 @@
 import React from 'react'
 
-import { Main } from '~/components'
+import { Header, Information } from '~/components'
+
+import * as S from './styles'
 
 const pages: React.FC = () => {
-  return <Main />
+  return (
+    <S.Container>
+      <Header />
+
+      <Information />
+    </S.Container>
+  )
 }
 
 export default pages
