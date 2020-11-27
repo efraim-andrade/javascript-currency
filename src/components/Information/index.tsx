@@ -17,7 +17,9 @@ const Information = () => {
         numbers or use a <a href="">library</a>.
       </p>
 
-      <span className="try-it">Try it on the calculator:</span>
+      <span className="try-it">
+        Try it on the calculator: <S.ArrowIcon />
+      </span>
     </S.Container>
   )
 }

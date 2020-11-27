@@ -1,10 +1,13 @@
 import styled, { css } from 'styled-components'
 import { lighten } from 'polished'
+import { DownArrowCircle } from '@styled-icons/boxicons-solid'
 
 export const Container = styled.div`
   ${({ theme }) => css`
+    margin-bottom: 3.2rem;
+
     h1 {
-      margin-bottom: 16px;
+      margin-bottom: 1.6rem;
 
       font-size: 3.2rem;
       font-weight: 700;
@@ -42,4 +45,11 @@ export const Container = styled.div`
       font-size: ${theme.font.sizes.medium};
     }
   `}
+`
+
+export const ArrowIcon = styled(DownArrowCircle).attrs(({ theme }) => ({
+  height: '32',
+  color: theme.colors.primary
+}))`
+  margin-left: 0.8rem;
 `

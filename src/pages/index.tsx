@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Header, Information } from '~/components'
+import { Header, Information, TryIt } from '~/components'
 
 import * as S from './styles'
 
@@ -10,6 +10,8 @@ const pages: React.FC = () => {
       <Header />
 
       <Information />
+
+      <TryIt />
     </S.Container>
   )
 }

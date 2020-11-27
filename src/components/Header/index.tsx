@@ -1,6 +1,6 @@
 import React from 'react'
 
-import JSCurrencyIcon from '~/assets/js-currency-icon.svg'
+import { Logo } from '~/components'
 
 import * as S from './styles'
 
@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <S.Container>
       <S.Logo>
-        <JSCurrencyIcon />
+        <Logo />
 
         <S.Info>
           <small>Javascript</small>
