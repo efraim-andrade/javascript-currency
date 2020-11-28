@@ -2,6 +2,7 @@ import Head from 'next/head'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'styled-components'
 
+import '~/styles/index.css'
 import theme from '~/styles/theme'
 import GlobalStyles from '~/styles/global'
 
