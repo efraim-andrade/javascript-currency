@@ -19,22 +19,22 @@ const modifiers = {
   `
 }
 
-type ContainerProps = Pick<InputProps, 'labelPosition'>
+type ContainerProps = Pick<InputProps, 'labelPosition' | 'maxWidth'>
 
 export const Container = styled.div<ContainerProps>`
-  ${({ theme, labelPosition }) => css`
-    max-width: 15rem;
+  ${({ theme, labelPosition, maxWidth }) => css`
+    width: 100%;
+    max-width: ${maxWidth};
 
     display: flex;
 
     label {
-      color: ${theme.colors.secondary};
+      line-height: 1;
       font-size: 1.5rem;
       font-weight: bold;
-
-      line-height: 1;
       text-align: center;
       word-wrap: break-word;
+      color: ${theme.colors.secondary};
     }
 
     ${!!labelPosition && modifiers[labelPosition]}

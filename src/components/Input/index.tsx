@@ -3,11 +3,14 @@ import React, { useMemo } from 'react'
 import * as S from './styles'
 
 export type InputProps = {
+  maxWidth?: string
   disabled?: boolean
   className?: string
   placeholder?: string
+  value?: string | number
   label: string | React.ReactNode
   labelPosition?: 'top' | 'bottom'
+  onChange?(value: string | number): void
 }
 
 const Input = ({
@@ -15,7 +18,10 @@ const Input = ({
   disabled,
   className,
   placeholder,
-  labelPosition = 'top'
+  maxWidth = '16rem',
+  labelPosition = 'top',
+  onChange = () => {},
+  value = ''
 }: InputProps) => {
   const selectedClasses = useMemo(() => {
     if (!className)
@@ -25,13 +31,19 @@ const Input = ({
   }, [className])
 
   return (
-    <S.Container labelPosition={labelPosition} aria-label="field-container">
+    <S.Container
+      maxWidth={maxWidth}
+      aria-label="field-container"
+      labelPosition={labelPosition}
+    >
       <label>{label}</label>
 
       <S.Input
-        placeholder={placeholder}
+        value={value}
         disabled={disabled}
+        placeholder={placeholder}
         className={selectedClasses}
+        onChange={(event) => !!onChange && onChange(event.target.value || '')}
       />
     </S.Container>
   )
