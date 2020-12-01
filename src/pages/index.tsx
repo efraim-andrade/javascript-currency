@@ -9,9 +9,11 @@ const pages: React.FC = () => {
     <S.Container>
       <Header />
 
-      <Information />
+      <div className="content md:flex justify-between align-items-center w-full">
+        <Information />
 
-      <TryIt />
+        <TryIt />
+      </div>
     </S.Container>
   )
 }

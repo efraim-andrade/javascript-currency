@@ -7,6 +7,10 @@ export const Logo = styled.div`
 
   display: flex;
   align-items: center;
+
+  @media screen and (min-width: 720px) {
+    margin-bottom: 4.8rem;
+  }
 `
 
 export const Info = styled.div`

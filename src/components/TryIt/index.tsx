@@ -45,7 +45,7 @@ const TryIt = () => {
           disabled
           value={pureJS}
           placeholder="0"
-          maxWidth="17rem"
+          maxWidth="23.5rem"
           labelPosition="bottom"
           label="Javascript puro"
           className="text-secondary bg-secondary bg-opacity-20 placeholder-white border-mainBg"
@@ -54,7 +54,7 @@ const TryIt = () => {
         <Input
           disabled
           placeholder="0"
-          maxWidth="17rem"
+          maxWidth="23.5rem"
           value={currencyJS}
           labelPosition="bottom"
           className="text-black bg-primary placeholder-black border-mainBg"

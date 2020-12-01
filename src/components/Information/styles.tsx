@@ -14,6 +14,11 @@ export const Container = styled.div`
       line-height: 4rem;
       color: ${theme.colors.secondary};
 
+      @media screen and (min-width: 720px) {
+        font-size: 4rem;
+        line-height: 5rem;
+      }
+
       strong {
         color: ${theme.colors.primary};
       }

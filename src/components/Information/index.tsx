@@ -4,7 +4,7 @@ import * as S from './styles'
 
 const Information = () => {
   return (
-    <S.Container>
+    <S.Container className="max-w-3xl">
       <h1>
         Why my <strong>JS</strong> calculations do not work properly ?
       </h1>
